@@ -1,7 +1,9 @@
 class Dealer{
-constructor(){
+constructor(x,y){
 getHand = hand;
 addCardToHand = card;
+this.x = x;
+this.y = y;
 }
 
 // der dannes en if statement for at bestemme om dealer skal "hit" eller ej'
