@@ -1,9 +1,5 @@
-class Hand{
-constructor(){
-    
-}
-
-
+class Hand {
+  constructor() {}
 }
 
 /*
