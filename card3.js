@@ -56,6 +56,7 @@ class Card3 {
       61.5,
       87.5
     );
-    image(croppedImg, 50 + (25 + 61.5) * 2, 400);
+    imageMode(CENTER);
+    image(croppedImg, width/2, 400);
   }
 }

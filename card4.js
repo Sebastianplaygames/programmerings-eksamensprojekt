@@ -56,6 +56,6 @@ class Card4 {
       61.5,
       87.5
     );
-    image(croppedImg, 50 + (25 + 61.5) * 3, 400);
+    image(croppedImg, 400, 400);
   }
 }

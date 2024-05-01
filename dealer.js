@@ -1,18 +1,14 @@
+let dealer = 0;
+
+
+
 class Dealer{
-constructor(x,y){
-getHand = hand;
-addCardToHand = card;
-this.x = x;
-this.y = y;
-}
-
-// der dannes en if statement for at bestemme om dealer skal "hit" eller ej'
-/* if (totalValue() <= 17){
-dealer.hit()
-}
-else if (totalValue() > 17){
-dealer.stand()
-
-}
-*/
+    if (
+        mouseX > 0 &&
+        mouseX < 100 &&
+        mouseY > 0 &&
+        mouseY < 100
+      ) {
+        dealer = 0;
+      }
 }

@@ -11,6 +11,7 @@ function setup() {
 
 }
 
+
 function draw() {
   background(42, 100, 25);
 
@@ -32,4 +33,8 @@ function draw() {
   imageMode(CENTER);
   image(dealerImage,width/2,75);
   player.show();
+  
 }
+
+
+
