@@ -8,18 +8,11 @@ function preload() {
 function setup() {
   createCanvas(600, 600);
   player.setup();
-
-
 }
-
 
 function draw() {
   background(42, 100, 25);
 
   dealer.show();
   player.show();
-  
 }
-
-
-

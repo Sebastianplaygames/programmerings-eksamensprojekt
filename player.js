@@ -45,7 +45,12 @@ class Player {
     card1.show();
     card2.show();
     score2 = text(" " + (result1 + result2), 300 + 100 / 2 - 5, 155 + 40);
-}
+
+    if (dealer1 == 1) {
+      fill(0);
+      rect(width / 2 - 100 / 2, 225, 100, 50);
+    }
+  }
 }
 
 function mousePressed() {
@@ -58,9 +63,9 @@ function mousePressed() {
     textSize(35);
     textAlign(CENTER);
     text("YOU WIN!", width / 2, height / 2);
-}
+  }
 
-  if (run == 0) {
+  if (run == 0 && dealer1 == 0) {
     if (
       mouseX > width / 3 - 100 / 2 &&
       mouseX < width / 3 - 100 / 2 + 100 &&
@@ -79,6 +84,8 @@ function mousePressed() {
         card3.show();
         mouseClickedInside = true;
         clickCount = 1;
+        dealer1 = 1;
+
         if (result1 + result2 + result3 == 21) {
           run++;
           fill(255);
@@ -183,5 +190,13 @@ function mousePressed() {
     mouseY < height - 100 + 40
   ) {
     run++;
+  }
+
+  if (dealer1 == 1) {
+    fill(0);
+    rect(width / 2 - 100 / 2, 225, 100, 50);
+  }
+  if (mouseX > 0 && mouseX < 100 && mouseY > 0 && mouseY < 100) {
+    dealer1--;
   }
 }
