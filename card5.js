@@ -1,3 +1,7 @@
+let card5;
+let valueX5;
+let valueY5;
+let result5;
 class Card5 {
   constructor() {
     this.cardsImage;
@@ -8,6 +12,9 @@ class Card5 {
   }
 
   setup() {
+    valueX5 = floor(random(1, 14));
+    valueY5 = floor(random(1, 5));
+
     if (valueX5 == 1 && valueY5 >= 1 && valueY5 <= 4) {
       console.log((result5 = 1));
     } else if (valueX5 == 2 && valueY5 >= 1 && valueY5 <= 4) {
@@ -39,17 +46,6 @@ class Card5 {
       61.5,
       87.5
     );
-    image(croppedImg, 50+((25+61.5)*4), 400);
+    image(croppedImg, 50 + (25 + 61.5) * 4, 400);
   }
 }
-
-/*
-Samtlige kort indsættes samlet på ét billede
-Måden hvorpå kortene hives ind på spillebrættet er ved hjælp af beregnede placeringer
-Kortene tildeles værdier fra 1 til 52, hvor man på denne måde kan få fremkaldt et billede
-Kortene modtager først senere den korrekte værdi som betyder noget for spillet
-Værdierne bliver herefter givet fra 1 til 11
-    Altså kan es være 1 eller 11
-    Fra 2 - 10 følger egen værdien
-    Billedkortene har værdien 10
-*/
