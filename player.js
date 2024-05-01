@@ -1,6 +1,6 @@
 class Player {
   constructor() {
-    
+
   }
 
   preload() {
@@ -31,11 +31,15 @@ class Player {
     //card4.show();
     //card5.show();
 
-    //score1 = text(" " + (result1), 50, 50);
-    score2 = text(" " + (result1 + result2), 50, 50);
-    //score3 = text(" " + (result1+result2+result3), 50, 50);
-    //score4 = text(" " + (result1+result2+result3+result4), 50, 50);
-    //score5 = text(" " + (result1+result2+result3+result4+result5), 50, 50);
+    //Scoreboard til Player opstilles
+    fill(255);
+    textSize(25);
+    textAlign(CENTER);
+    //score1 = text(" " + (result1), 300+100/2-5,155+40);
+    score2 = text(" " + (result1 + result2), 300+100/2-5,155+40);
+    //score3 = text(" " + (result1+result2+result3), 300+100/2-5,155+40);
+    //score4 = text(" " + (result1+result2+result3+result4), 300+100/2-5,155+40);
+    //score5 = text(" " + (result1+result2+result3+result4+result5), 300+100/2-5,155+40);
   }
 }
 
