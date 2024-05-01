@@ -16,6 +16,11 @@ class Card3 {
     valueX3 = floor(random(1, 14));
     valueY3 = floor(random(1, 5));
 
+    if (valueX3 == valueX1 && valueY3 == valueY1 || valueX3 == valueX2 && valueY3 == valueY2){
+      valueX3 = floor(random(1, 14));
+      valueY3 = floor(random(1, 5));
+    } 
+
     if (valueX3 == 1 && valueY3 >= 1 && valueY3 <= 4) {
       if (result1 + result2 <= 10){
         console.log((result3 = 11));

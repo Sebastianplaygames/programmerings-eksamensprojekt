@@ -27,9 +27,9 @@ class Player {
   show() {
     card1.show();
     card2.show();
-    //card3.show();
-    //card4.show();
-    //card5.show();
+    card3.show();
+    card4.show();
+    card5.show();
 
     //Scoreboard til Player opstilles
     fill(255);

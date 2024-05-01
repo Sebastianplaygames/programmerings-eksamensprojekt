@@ -15,6 +15,10 @@ class Card2 {
   setup() {
     valueX2 = floor(random(1, 14));
     valueY2 = floor(random(1, 5));
+    if (valueX2 == valueX1 && valueY2 == valueY1){
+      valueX2 = floor(random(1, 14));
+      valueY2 = floor(random(1, 5));
+    } 
 
     if (valueX2 == 1 && valueY2 >= 1 && valueY2 <= 4) {
       if (result1 <= 10){

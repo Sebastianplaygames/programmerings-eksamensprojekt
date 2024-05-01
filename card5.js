@@ -15,6 +15,11 @@ class Card5 {
     valueX5 = floor(random(1, 14));
     valueY5 = floor(random(1, 5));
 
+    if (valueX5 == valueX1 && valueY5 == valueY1 || valueX5 == valueX2 && valueY5 == valueY2 || valueX5 == valueX3 && valueY5 == valueY3 || valueX5 == valueX4 && valueY5 == valueY4){
+      valueX5 = floor(random(1, 14));
+      valueY5 = floor(random(1, 5));
+    } 
+
     if (valueX5 == 1 && valueY5 >= 1 && valueY5 <= 4) {
       if (result1 + result2 + result3 + result4 <= 10){
         console.log((result5 = 11));
