@@ -1,4 +1,4 @@
-class Card {
+class Card1 {
   constructor() {
     this.cardsImage;
   }
@@ -8,38 +8,38 @@ class Card {
   }
 
   setup() {
-    if (value1 == 1 && value2 >= 1 && value2 <= 4) {
-      console.log((result = 1));
-    } else if (value1 == 2 && value2 >= 1 && value2 <= 4) {
-      console.log((result = 2));
-    } else if (value1 == 3 && value2 >= 1 && value2 <= 4) {
-      console.log((result = 3));
-    } else if (value1 == 4 && value2 >= 1 && value2 <= 4) {
-      console.log((result = 4));
-    } else if (value1 == 5 && value2 >= 1 && value2 <= 4) {
-      console.log((result = 5));
-    } else if (value1 == 6 && value2 >= 1 && value2 <= 4) {
-      console.log((result = 6));
-    } else if (value1 == 7 && value2 >= 1 && value2 <= 4) {
-      console.log((result = 7));
-    } else if (value1 == 8 && value2 >= 1 && value2 <= 4) {
-      console.log((result = 8));
-    } else if (value1 == 9 && value2 >= 1 && value2 <= 4) {
-      console.log((result = 9));
-    } else if (value1 >= 10 && value1 <= 13 && value2 >= 1 && value2 <= 4) {
-      console.log((result = 10));
+    if (valueX1 == 1 && valueY1 >= 1 && valueY1 <= 4) {
+      console.log((result1 = 1));
+    } else if (valueX1 == 2 && valueY1 >= 1 && valueY1 <= 4) {
+      console.log((result1 = 2));
+    } else if (valueX1 == 3 && valueY1 >= 1 && valueY1 <= 4) {
+      console.log((result1 = 3));
+    } else if (valueX1 == 4 && valueY1 >= 1 && valueY1 <= 4) {
+      console.log((result1 = 4));
+    } else if (valueX1 == 5 && valueY1 >= 1 && valueY1 <= 4) {
+      console.log((result1 = 5));
+    } else if (valueX1 == 6 && valueY1 >= 1 && valueY1 <= 4) {
+      console.log((result1 = 6));
+    } else if (valueX1 == 7 && valueY1 >= 1 && valueY1 <= 4) {
+      console.log((result1 = 7));
+    } else if (valueX1 == 8 && valueY1 >= 1 && valueY1 <= 4) {
+      console.log((result1 = 8));
+    } else if (valueX1 == 9 && valueY1 >= 1 && valueY1 <= 4) {
+      console.log((result1 = 9));
+    } else if (valueX1 >= 10 && valueX1 <= 13 && valueY1 >= 1 && valueY1 <= 4) {
+      console.log((result1 = 10));
     }
   }
 
   show() {
     this.cardsImage.resize(800, 350);
     let croppedImg = this.cardsImage.get(
-      61.5 * (value1 - 1),
-      87.5 * (value2 - 1),
+      61.5 * (valueX1 - 1),
+      87.5 * (valueY1 - 1),
       61.5,
       87.5
     );
-    image(croppedImg, 110, 200);
+    image(croppedImg, 50+((25+61.5)*0), 400);
   }
 }
 
