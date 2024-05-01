@@ -1,3 +1,5 @@
+
+
 function preload() {
   player = new Player();
   player.preload();
@@ -16,3 +18,4 @@ function draw() {
   dealer.show();
   player.show();
 }
+

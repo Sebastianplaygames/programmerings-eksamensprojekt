@@ -1,4 +1,5 @@
-let dealer1 = 0;
+let valueD1;
+let valueD2;
 
 class Dealer {
   constructor() {
@@ -27,6 +28,10 @@ class Dealer {
     this.dealerImage.resize(150, 150);
     imageMode(CENTER);
     image(this.dealerImage, width / 2, 75);
+
+    fill(255);
+    textSize(25);
+    valueD1 = text(" " + (floor(random(2,11))), 300 - 100/2 - 5, 155 + 40);
 
   }
 }
