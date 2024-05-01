@@ -46,11 +46,9 @@ class Player {
     card2.show();
     score2 = text(" " + (result1 + result2), 300 + 100 / 2 - 5, 155 + 40);
   }
-
 }
 
 function mousePressed() {
-
   if (run == 0 && dealer == 0) {
     if (
       mouseX > width / 3 - 100 / 2 &&
@@ -62,11 +60,14 @@ function mousePressed() {
         fill(92, 46, 6);
         rect(width / 3 + width / 3 / 2, 165, width / 3 / 2, 45);
         fill(255);
-        score3 = text(" " + (result1 + result2 + result3), 300 + 100 / 2 - 5, 155 + 40);
+        score3 = text(
+          " " + (result1 + result2 + result3),
+          300 + 100 / 2 - 5,
+          155 + 40
+        );
         card3.show();
         mouseClickedInside = true;
         clickCount = 1;
-        //dealer++;
         if (result1 + result2 + result3 == 21) {
           run++;
           fill(255);
@@ -173,5 +174,3 @@ function mousePressed() {
     run++;
   }
 }
-
-
