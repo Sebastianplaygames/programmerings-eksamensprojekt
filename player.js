@@ -45,11 +45,22 @@ class Player {
     card1.show();
     card2.show();
     score2 = text(" " + (result1 + result2), 300 + 100 / 2 - 5, 155 + 40);
-  }
+}
 }
 
 function mousePressed() {
-  if (run == 0 && dealer == 0) {
+  if (result1 + result2 == 21) {
+    run++;
+    fill(255);
+    rect(width / 2 - 250 / 2, height / 2 - 100 / 2, 250, 70);
+
+    fill(0);
+    textSize(35);
+    textAlign(CENTER);
+    text("YOU WIN!", width / 2, height / 2);
+}
+
+  if (run == 0) {
     if (
       mouseX > width / 3 - 100 / 2 &&
       mouseX < width / 3 - 100 / 2 + 100 &&
