@@ -1,9 +1,17 @@
 class Card{
-constructor(){
+    constructor() {
+        this.cardsImage;
+    }
 
-}
+    preload(){
+        this.cardsImage = loadImage('cards.png');
+    }
 
-
+    show() {
+        this.cardsImage.resize(800, 350);
+        let croppedImg = this.cardsImage.get(61.5 * (value1 - 1), 87.5 * (value2 - 1), 61.5, 87.5);
+        image(croppedImg, 110, 200);
+    }
 }
 
 /*
