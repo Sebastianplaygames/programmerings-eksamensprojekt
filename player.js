@@ -36,7 +36,7 @@ class Player {
     textSize(25);
     textAlign(CENTER);
     //score1 = text(" " + (result1), 300+100/2-5,155+40);
-    score2 = text(" " + (result1 + result2), 300+100/2-5,155+40);
+    //score2 = text(" " + (result1 + result2), 300+100/2-5,155+40);
     //score3 = text(" " + (result1+result2+result3), 300+100/2-5,155+40);
     //score4 = text(" " + (result1+result2+result3+result4), 300+100/2-5,155+40);
     //score5 = text(" " + (result1+result2+result3+result4+result5), 300+100/2-5,155+40);

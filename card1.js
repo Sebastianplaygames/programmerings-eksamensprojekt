@@ -17,7 +17,7 @@ class Card1 {
     valueY1 = floor(random(1, 5));
 
     if (valueX1 == 1 && valueY1 >= 1 && valueY1 <= 4) {
-      console.log((result1 = 1));
+      console.log((result1 = 11));
     } else if (valueX1 == 2 && valueY1 >= 1 && valueY1 <= 4) {
       console.log((result1 = 2));
     } else if (valueX1 == 3 && valueY1 >= 1 && valueY1 <= 4) {

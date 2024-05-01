@@ -16,7 +16,11 @@ class Card5 {
     valueY5 = floor(random(1, 5));
 
     if (valueX5 == 1 && valueY5 >= 1 && valueY5 <= 4) {
-      console.log((result5 = 1));
+      if (result1 + result2 + result3 + result4 <= 10){
+        console.log((result5 = 11));
+      } else if (result1 + result2 + result3 + result4 > 10){
+        console.log((result5 = 1));
+      }
     } else if (valueX5 == 2 && valueY5 >= 1 && valueY5 <= 4) {
       console.log((result5 = 2));
     } else if (valueX5 == 3 && valueY5 >= 1 && valueY5 <= 4) {
