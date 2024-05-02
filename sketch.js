@@ -21,9 +21,13 @@ function draw() {
   player.show();
 
 }
-
+/*
 function reset() {
-player.reset()
-//dealer.reset()
-//player = new Player();
+  player.preload();
+   player.setup(); 
+   player.show()
+
+  dealer.setup()
+  dealer.preload()
 }
+*/
