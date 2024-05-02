@@ -7,6 +7,10 @@ function preload() {
 
 function setup() {
   createCanvas(600, 600);
+  let button = createButton('play again');
+  button.position(0, 100);
+  button.mousePressed(reset);
+
   player.setup(); 
 }
 
@@ -15,4 +19,11 @@ function draw() {
 
   dealer.show();
   player.show();
+
+}
+
+function reset() {
+player.reset()
+//dealer.reset()
+//player = new Player();
 }
