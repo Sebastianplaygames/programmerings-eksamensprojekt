@@ -204,8 +204,12 @@ function mousePressed() {
           card5.show();
           run++;
 
-          if ((result1 + result2 + result3 + result4 + result5 == 21 && valueD2 >= 20) ||
-          (result1 + result2 + result3 + result4 + result5 == 21 && valueD2 <= 22)) {
+          if (
+            (result1 + result2 + result3 + result4 + result5 == 21 &&
+              valueD2 >= 20) ||
+            (result1 + result2 + result3 + result4 + result5 == 21 &&
+              valueD2 <= 22)
+          ) {
             run++;
             fill(255);
             rect(width / 2 - 250 / 2, height / 2 - 100 / 2, 250, 70);
@@ -243,7 +247,7 @@ function mousePressed() {
             textSize(35);
             textAlign(CENTER);
             text("YOU LOSE!", width / 2, height / 2);
-  
+
             fill(92, 46, 6);
             rect(width / 3, 165, width / 3 / 2, 45);
             fill(255);
@@ -272,14 +276,146 @@ function mousePressed() {
     mouseY < height - 100 + 40
   ) {
     run++;
-    if (clickCount == 0){
-      
-    } else if (clickCount == 1){
+    if (clickCount == 0) {
+      if (
+        (result1 + result2 == 21 && valueD2 >= 20) ||
+        (result1 + result2 == 21 && valueD2 <= 22) ||
+        result1 + result2 > valueD2 ||
+        valueD2 >= 22
+      ) {
+        fill(255);
+        rect(width / 2 - 250 / 2, height / 2 - 100 / 2, 250, 70);
 
-    } else if (clickCount == 2){
+        fill(0);
+        textSize(35);
+        textAlign(CENTER);
+        text("YOU WIN!", width / 2, height / 2);
 
-    } else if (clickCount == 3){
+        fill(92, 46, 6);
+        rect(width / 3, 165, width / 3 / 2, 45);
+        fill(255);
+        textSize(25);
+        text(" " + valueD2, 300 - 100 / 2 - 5, 155 + 40);
+      } else if (result1 + result2 <= valueD2 && valueD2 <= 22) {
+        fill(255);
+        rect(width / 2 - 250 / 2, height / 2 - 100 / 2, 250, 70);
 
+        fill(0);
+        textSize(35);
+        textAlign(CENTER);
+        text("YOU LOSE!", width / 2, height / 2);
+
+        fill(92, 46, 6);
+        rect(width / 3, 165, width / 3 / 2, 45);
+        fill(255);
+        textSize(25);
+        text(" " + valueD2, 300 - 100 / 2 - 5, 155 + 40);
+      }
+    } else if (clickCount == 1) {
+      if (
+        (result1 + result2 + result3 == 21 && valueD2 >= 20) ||
+        (result1 + result2 + result3 == 21 && valueD2 <= 22) ||
+        result1 + result2 + result3 > valueD2 ||
+        valueD2 >= 22
+      ) {
+        fill(255);
+        rect(width / 2 - 250 / 2, height / 2 - 100 / 2, 250, 70);
+
+        fill(0);
+        textSize(35);
+        textAlign(CENTER);
+        text("YOU WIN!", width / 2, height / 2);
+
+        fill(92, 46, 6);
+        rect(width / 3, 165, width / 3 / 2, 45);
+        fill(255);
+        textSize(25);
+        text(" " + valueD2, 300 - 100 / 2 - 5, 155 + 40);
+      } else if (result1 + result2 + result3 <= valueD2 && valueD2 <= 22) {
+        fill(255);
+        rect(width / 2 - 250 / 2, height / 2 - 100 / 2, 250, 70);
+
+        fill(0);
+        textSize(35);
+        textAlign(CENTER);
+        text("YOU LOSE!", width / 2, height / 2);
+
+        fill(92, 46, 6);
+        rect(width / 3, 165, width / 3 / 2, 45);
+        fill(255);
+        textSize(25);
+        text(" " + valueD2, 300 - 100 / 2 - 5, 155 + 40);
+      }
+    } else if (clickCount == 2) {
+      if (
+        (result1 + result2 + result3 + result4 == 21 && valueD2 >= 20) ||
+        (result1 + result2 + result3 + result4 == 21 && valueD2 <= 22) ||
+        result1 + result2 + result3 + result4 > valueD2 ||
+        valueD2 >= 22
+      ) {
+        fill(255);
+        rect(width / 2 - 250 / 2, height / 2 - 100 / 2, 250, 70);
+
+        fill(0);
+        textSize(35);
+        textAlign(CENTER);
+        text("YOU WIN!", width / 2, height / 2);
+
+        fill(92, 46, 6);
+        rect(width / 3, 165, width / 3 / 2, 45);
+        fill(255);
+        textSize(25);
+        text(" " + valueD2, 300 - 100 / 2 - 5, 155 + 40);
+      } else if (result1 + result2 + result3 + result4 <= valueD2 && valueD2 <= 22) {
+        fill(255);
+        rect(width / 2 - 250 / 2, height / 2 - 100 / 2, 250, 70);
+
+        fill(0);
+        textSize(35);
+        textAlign(CENTER);
+        text("YOU LOSE!", width / 2, height / 2);
+
+        fill(92, 46, 6);
+        rect(width / 3, 165, width / 3 / 2, 45);
+        fill(255);
+        textSize(25);
+        text(" " + valueD2, 300 - 100 / 2 - 5, 155 + 40);
+      }
+    } else if (clickCount == 3) {
+      if (
+        (result1 + result2 + result3 + result4 + result5 == 21 && valueD2 >= 20) ||
+        (result1 + result2 + result3 + result4 + result5 == 21 && valueD2 <= 22) ||
+        result1 + result2 + result3 + result4 + result5 > valueD2 ||
+        valueD2 >= 22
+      ) {
+        fill(255);
+        rect(width / 2 - 250 / 2, height / 2 - 100 / 2, 250, 70);
+
+        fill(0);
+        textSize(35);
+        textAlign(CENTER);
+        text("YOU WIN!", width / 2, height / 2);
+
+        fill(92, 46, 6);
+        rect(width / 3, 165, width / 3 / 2, 45);
+        fill(255);
+        textSize(25);
+        text(" " + valueD2, 300 - 100 / 2 - 5, 155 + 40);
+      } else if (result1 + result2 + result3 + result4 + result5 <= valueD2 && valueD2 <= 22) {
+        fill(255);
+        rect(width / 2 - 250 / 2, height / 2 - 100 / 2, 250, 70);
+
+        fill(0);
+        textSize(35);
+        textAlign(CENTER);
+        text("YOU LOSE!", width / 2, height / 2);
+
+        fill(92, 46, 6);
+        rect(width / 3, 165, width / 3 / 2, 45);
+        fill(255);
+        textSize(25);
+        text(" " + valueD2, 300 - 100 / 2 - 5, 155 + 40);
+      }
     }
   }
 }

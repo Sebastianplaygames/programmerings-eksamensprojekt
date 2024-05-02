@@ -1,5 +1,3 @@
-
-
 function preload() {
   player = new Player();
   player.preload();
@@ -9,9 +7,7 @@ function preload() {
 
 function setup() {
   createCanvas(600, 600);
-  player.setup();
-
-  
+  player.setup(); 
 }
 
 function draw() {
@@ -20,4 +16,3 @@ function draw() {
   dealer.show();
   player.show();
 }
-

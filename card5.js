@@ -22,28 +22,28 @@ class Card5 {
 
     if (valueX5 == 1 && valueY5 >= 1 && valueY5 <= 4) {
       if (result1 + result2 + result3 + result4 <= 10){
-        console.log((result5 = 11));
+        result5 = 11;
       } else if (result1 + result2 + result3 + result4 > 10){
-        console.log((result5 = 1));
+        result5 = 1;
       }
     } else if (valueX5 == 2 && valueY5 >= 1 && valueY5 <= 4) {
-      console.log((result5 = 2));
+      result5 = 2;
     } else if (valueX5 == 3 && valueY5 >= 1 && valueY5 <= 4) {
-      console.log((result5 = 3));
+      result5 = 3;
     } else if (valueX5 == 4 && valueY5 >= 1 && valueY5 <= 4) {
-      console.log((result5 = 4));
+      result5 = 4;
     } else if (valueX5 == 5 && valueY5 >= 1 && valueY5 <= 4) {
-      console.log((result5 = 5));
+      result5 = 5;
     } else if (valueX5 == 6 && valueY5 >= 1 && valueY5 <= 4) {
-      console.log((result5 = 6));
+      result5 = 6;
     } else if (valueX5 == 7 && valueY5 >= 1 && valueY5 <= 4) {
-      console.log((result5 = 7));
+      result5 = 7;
     } else if (valueX5 == 8 && valueY5 >= 1 && valueY5 <= 4) {
-      console.log((result5 = 8));
+      result5 = 8;
     } else if (valueX5 == 9 && valueY5 >= 1 && valueY5 <= 4) {
-      console.log((result5 = 9));
+      result5 = 9;
     } else if (valueX5 >= 10 && valueX5 <= 13 && valueY5 >= 1 && valueY5 <= 4) {
-      console.log((result5 = 10));
+      result5 = 10;
     }
   }
 

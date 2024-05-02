@@ -23,28 +23,28 @@ class Card4 {
 
     if (valueX4 == 1 && valueY4 >= 1 && valueY4 <= 4) {
       if (result1 + result2 + result3 <= 10){
-        console.log((result4 = 11));
+        result4 = 11;
       } else if (result1 + result2 + result3 > 10){
-        console.log((result4 = 1));
+        result4 = 1;
       }
     } else if (valueX4 == 2 && valueY4 >= 1 && valueY4 <= 4) {
-      console.log((result4 = 2));
+      result4 = 2;
     } else if (valueX4 == 3 && valueY4 >= 1 && valueY4 <= 4) {
-      console.log((result4 = 3));
+      result4 = 3;
     } else if (valueX4 == 4 && valueY4 >= 1 && valueY4 <= 4) {
-      console.log((result4 = 4));
+      result4 = 4;
     } else if (valueX4 == 5 && valueY4 >= 1 && valueY4 <= 4) {
-      console.log((result4 = 5));
+      result4 = 5;
     } else if (valueX4 == 6 && valueY4 >= 1 && valueY4 <= 4) {
-      console.log((result4 = 6));
+      result4 = 6;
     } else if (valueX4 == 7 && valueY4 >= 1 && valueY4 <= 4) {
-      console.log((result4 = 7));
+      result4 = 7;
     } else if (valueX4 == 8 && valueY4 >= 1 && valueY4 <= 4) {
-      console.log((result4 = 8));
+      result4 = 8;
     } else if (valueX4 == 9 && valueY4 >= 1 && valueY4 <= 4) {
-      console.log((result4 = 9));
+      result4 = 9;
     } else if (valueX4 >= 10 && valueX4 <= 13 && valueY4 >= 1 && valueY4 <= 4) {
-      console.log((result4 = 10));
+      result4 = 10;
     }
   }
 

@@ -23,28 +23,28 @@ class Card3 {
 
     if (valueX3 == 1 && valueY3 >= 1 && valueY3 <= 4) {
       if (result1 + result2 <= 10){
-        console.log((result3 = 11));
+        result3 = 11;
       } else if (result1 + result2 > 10){
-        console.log((result3 = 1));
+        result3 = 1;
       }
     } else if (valueX3 == 2 && valueY3 >= 1 && valueY3 <= 4) {
-      console.log((result3 = 2));
+      result3 = 2;
     } else if (valueX3 == 3 && valueY3 >= 1 && valueY3 <= 4) {
-      console.log((result3 = 3));
+      result3 = 3;
     } else if (valueX3 == 4 && valueY3 >= 1 && valueY3 <= 4) {
-      console.log((result3 = 4));
+      result3 = 4;
     } else if (valueX3 == 5 && valueY3 >= 1 && valueY3 <= 4) {
-      console.log((result3 = 5));
+      result3 = 5;
     } else if (valueX3 == 6 && valueY3 >= 1 && valueY3 <= 4) {
-      console.log((result3 = 6));
+      result3 = 6;
     } else if (valueX3 == 7 && valueY3 >= 1 && valueY3 <= 4) {
-      console.log((result3 = 7));
+      result3 = 7;
     } else if (valueX3 == 8 && valueY3 >= 1 && valueY3 <= 4) {
-      console.log((result3 = 8));
+      result3 = 8;
     } else if (valueX3 == 9 && valueY3 >= 1 && valueY3 <= 4) {
-      console.log((result3 = 9));
+      result3 = 9;
     } else if (valueX3 >= 10 && valueX3 <= 13 && valueY3 >= 1 && valueY3 <= 4) {
-      console.log((result3 = 10));
+      result3 = 10;
     }
   }
 
