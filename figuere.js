@@ -1,4 +1,4 @@
-class Hand {
+class Figuere {
   constructor() {}
 }
 
