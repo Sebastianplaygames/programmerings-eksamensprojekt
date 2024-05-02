@@ -44,6 +44,7 @@ class Player {
 
     card1.show();
     card2.show();
+    let score2;
     score2 = text(" " + (result1 + result2), 300 + 100 / 2 - 5, 155 + 40);
 
     

@@ -12,6 +12,7 @@ function setup() {
   button.mousePressed(reset);
 
   player.setup(); 
+  dealer.setup();
 }
 
 function draw() {
@@ -19,11 +20,16 @@ function draw() {
 
   dealer.show();
   player.show();
+  text(mouseX,150,50)
 
 }
 
 function reset() {
-player.reset()
-//dealer.reset()
-//player = new Player();
-}
+ 
+    player.preload();
+     player.setup(); 
+  
+    dealer.setup()
+    dealer.preload()
+ 
+  }
