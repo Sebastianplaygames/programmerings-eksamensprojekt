@@ -22,28 +22,28 @@ class Card2 {
 
     if (valueX2 == 1 && valueY2 >= 1 && valueY2 <= 4) {
       if (result1 <= 10){
-        console.log((result2 = 11));
+        result2 = 11;
       } else if (result1 > 10){
-        console.log((result2 = 1));
+        result2 = 1;
       }
     } else if (valueX2 == 2 && valueY2 >= 1 && valueY2 <= 4) {
-      console.log((result2 = 2));
+      result2 = 2;
     } else if (valueX2 == 3 && valueY2 >= 1 && valueY2 <= 4) {
-      console.log((result2 = 3));
+      result2 = 3;
     } else if (valueX2 == 4 && valueY2 >= 1 && valueY2 <= 4) {
-      console.log((result2 = 4));
+      result2 = 4;
     } else if (valueX2 == 5 && valueY2 >= 1 && valueY2 <= 4) {
-      console.log((result2 = 5));
+      result2 = 5;
     } else if (valueX2 == 6 && valueY2 >= 1 && valueY2 <= 4) {
-      console.log((result2 = 6));
+      result2 = 6;
     } else if (valueX2 == 7 && valueY2 >= 1 && valueY2 <= 4) {
-      console.log((result2 = 7));
+      result2 = 7;
     } else if (valueX2 == 8 && valueY2 >= 1 && valueY2 <= 4) {
-      console.log((result2 = 8));
+      result2 = 8;
     } else if (valueX2 == 9 && valueY2 >= 1 && valueY2 <= 4) {
-      console.log((result2 = 9));
+      result2 = 9;
     } else if (valueX2 >= 10 && valueX2 <= 13 && valueY2 >= 1 && valueY2 <= 4) {
-      console.log((result2 = 10));
+      result2 = 10;
     }
   }
 

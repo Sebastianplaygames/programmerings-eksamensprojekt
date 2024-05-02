@@ -10,6 +10,8 @@ function preload() {
 function setup() {
   createCanvas(600, 600);
   player.setup();
+
+  
 }
 
 function draw() {

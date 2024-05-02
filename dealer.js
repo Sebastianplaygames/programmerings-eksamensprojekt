@@ -32,6 +32,6 @@ class Dealer {
     fill(255);
     textSize(25);
     valueD1 = text(" " + (floor(random(2,11))), 300 - 100/2 - 5, 155 + 40);
-
+    valueD2 = floor(random(17,28));
   }
 }
