@@ -272,5 +272,14 @@ function mousePressed() {
     mouseY < height - 100 + 40
   ) {
     run++;
+    if (clickCount == 0){
+      
+    } else if (clickCount == 1){
+
+    } else if (clickCount == 2){
+
+    } else if (clickCount == 3){
+
+    }
   }
 }
