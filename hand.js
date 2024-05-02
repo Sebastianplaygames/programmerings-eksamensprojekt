@@ -1,3 +1,4 @@
+<<<<<<< HEAD:figuere.js
 class Figuere {
 <<<<<<< HEAD
   
@@ -5,6 +6,9 @@ class Figuere {
   
 }
 =======
+=======
+class Hand {
+>>>>>>> parent of 466bcba (Figuere):hand.js
   constructor() {}
 }
 
